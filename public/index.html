@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="theme-color" content="#000000" />
+  <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+  <link rel="stylesheet" href="../src/styles.css">
+
+  <title>React App</title>
+</head>
+
+<body>
+
+  <h2 class="glow">12 years Anniversary</h2>
+  <svg>
+    <filter id="wavy">
+      <feTurbulence x="0" y="0" baseFrequency="0.009" numOctaves="5" seed="2">
+        <animate attributeName="baseFrequency" dur="60s" values="0.02;0.005;0.02" repeatCount="indefinite">
+      </feTurbulence>
+      <feDisplacementMap in="SourceGraphic" scale="30">
+    </filter>
+  </svg>
+
+  <!-- <div id="header" w3-include-html="./text_spark.html"></div> -->
+  <div id="root"></div>
+  <!-- <script src="../src/glow_text.js"></script> -->
+</body>
+
+</html>

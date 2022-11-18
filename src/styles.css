@@ -1,0 +1,53 @@
+.App,
+body,
+html,
+canvas {
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+  background: #141c2d;
+}
+
+#header {
+  width: 100%;
+  height: 40vh;
+}
+
+#root {
+  height: 70vh;
+  width: 100%;
+}
+
+.glow {
+  margin: 0;
+  font-size: 50px;
+  padding: 50px;
+  color: #fff;
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 5s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 30px #d9d7f1, 0 0 40px #fffdde, 0 0 50px #e7fbbe,
+      0 0 60px #ffcbcb, 0 0 50px #e7fbbe, 0 0 40px red;
+    filter: hue-rotate(0deg);
+    filter: url(#wavy);
+  }
+
+  to {
+    text-shadow: 0 0 30px #00ffd1, 0 0 40px #31c6d4, 0 0 50px #ffff00,
+      0 0 60px #ff1e1e, 0 0 50px #ffff00, 0 0 40px red;
+    filter: hue-rotate(360deg);
+    filter: url(#wavy);
+  }
+}
+
+svg {
+  width: 0;
+  height: 0;
+}
